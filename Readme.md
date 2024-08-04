@@ -22,9 +22,9 @@ This is a simple eCommerce API built with Express.js, Node.js, and MongoDB. It a
 
    ```bash
    git clone https://github.com/yourusername/ecommerce-api.git
-   cd ecommerce-api```
+   cd ecommerce-api
 2. **Initailising**:
    ```bash
    npm init
    npm i mongoose
-   npm i nodemon ```
+   npm i nodemon 
