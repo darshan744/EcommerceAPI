@@ -2,6 +2,7 @@
 
 const express = require('express');
 const app = express();//creates express app;
+const connectDatabase = require('./config/connectDatabase')
 
 //READS THE PATH OF THE ENV FILE TO ACCESS IT WE USE PATH AND DOTENV FILE 
 const path = require('path');
@@ -10,6 +11,8 @@ dotenv.config({path:path.join(__dirname,'config','config.env')})
 
 const products = require('./routes/products')
 const orders = require('./routes/order')
+connectDatabase();
+
 app.use('/api/v1/',products);
 app.use('/api/v1/',orders);
 
