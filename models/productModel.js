@@ -12,7 +12,7 @@ const productSchema = mongoose.Schema({
     ],
     category:String,
     seller:String,
-    stock:String,
+    stock:Number,
     numOfReviews:String,
     createdAt:Date
 })
